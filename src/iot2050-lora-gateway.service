@@ -1,0 +1,14 @@
+[Unit]
+Description=LoRa Gateway to The Things Network v3
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/basicstation/build-rpi-std/bin/
+ExecStart=/home/basicstation/build-rpi-std/bin/start.sh
+SyslogIdentifier=iot2050-gateway
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
