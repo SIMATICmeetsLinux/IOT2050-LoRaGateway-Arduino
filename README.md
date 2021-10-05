@@ -66,31 +66,13 @@ The following software is used for this manual:
 
 - **LoRa Basics™ Station** for an implementation of a LoRa® packet forwarder. A LoRa packet forwarder is a program running on the host of a LoRa-based gateway. It forwards RF packets received by the concentrator (uplinks) to a LoRaWAN® Network Server (LNS) through a secured IP link ([more information](https://doc.sm.tc/station/) - [Github Link](https://github.com/lorabasics/basicstation.git))
 - **The LoRaWAN Network Server from The Things Industry** is at the core of every LoRaWAN Network that enables connectivity, management, and monitoring of devices, gateways and end-user applications. Its main objectives are to ensure the security, scalability and reliability of data routing throughout the network. (registration required! - [more information](https://www.thethingsindustries.com/news/what-lorawan-network-server/))
-
-To use this application, a debian-based OS and a internet-connection for the SIMATIC IOT2050 is required. You can use the following steps to build the IOT2050 Example Image from github (the released [Example Image V1.0.2](https://support.industry.siemens.com/cs/de/en/view/109780231) cannot be used due to some bugs in this version. The Example Image must be built from the current master branch):
-
-1. Create a new VM with Ubuntu 20.04 with the following specifications (recommended):
-    1. 2 cores
-    2. 4GB Ram
-    3. 50GB disk space (at least 20GB)
-    4. Internet access
-2. Login to the VM as user (not root), open a console and use the following commands:
-3. `sudo apt update`
-4. `sudo apt install docker.io`
-5. `sudo usermod -aG docker $USER`
-6. Reboot the VM
-7. `mkdir IO2050_Images`
-8. `cd IOT2050_Images`
-9. `git clone https://github.com/siemens/meta-iot2050.git`
-10. `cd meta-iot2050`
-11. `./kas-docker --isar build kas-iot2050-example.yml`
-12. After creating the image can be found in `build/tmp/deploy/images/iot2050/iot2050-image-example-isar-iot2050.wic.img`
-
-In addition, the setting up of the IOT2050 must be completed (the image built above needs to be used instead of the V1.0.2 mentioned the setting up). **Note: When building the image from Github, the default IP addresses of the two Ethernet interfaces on the IOT2050 are reversed (in contrast to the setting up).** [These instructions](https://github.com/SIMATICmeetsLinux/IOT2050-SmartFarming-Application/blob/main/docs/SIMATIC_IOT2050_setting_up_V1.0.md) can be used as support for this. You can get further help in [the SIMATIC IOT2050 forum](https://support.industry.siemens.com/tf/ww/en/threads/309).
+- **IOT2050 Example Image as of V1.1.1** as Linux operating system for the IOT2050. Can be downloaded [here](https://support.industry.siemens.com/cs/de/en/view/109780231)
 
 ### **Preparation of the IOT2050 Platform**
+For the first commissioning of the IOT2050 please refer to the [Setting Up](https://github.com/SIMATICmeetsLinux/IOT2050-SmartFarming-Application/blob/main/docs/SIMATIC_IOT2050_setting_up.md). 
+You can get further help in [the SIMATIC IOT2050 forum](https://support.industry.siemens.com/tf/ww/en/threads/309).
 
-An update must be performed for the system and *git* must be installed. The following commands are executed for this:
+After working through the Setting Up, an update must be performed for the system and *git* must be installed. The following commands are executed for this:
 
     sudo apt-get update
     sudo apt-get upgrade
