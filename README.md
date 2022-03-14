@@ -23,7 +23,7 @@
     - [**Building an exemplary application**](#building-an-exemplary-application)
       - [**Adding end devices**](#adding-end-devices)
       - [**Visualization of end device data with Node-Red on the IOT2050**](#visualization-of-end-device-data-with-node-red-on-the-iot2050)
-  - [**Contribution**](#contribution)
+  - [**Contribution and Contribution License Agreement**](#contribution-and-contribution-license-agreement))
   - [**Licence and Legal Information**](#licence-and-legal-information)
 
 ## **Overview**
@@ -281,9 +281,9 @@ The pre-build flow shows an example of the combination of three end devices in t
 
 To open the dashboard of node-red open the URL `http://<IP of the IOT2050>:1880/ui`
 
-## **Contribution**
+## **Contribution and Contribution License Agreement**
 
-Thanks for your interest in contributing. Anybody is free to report bugs, unclear documenation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
+Thanks for your interest in contributing. Anybody is free to report bugs, unclear documenation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.  For more information please check the [Contribution License Agreement](docs/Siemens_CLA.pdf).
 
 ## **Licence and Legal Information**
 
