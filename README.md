@@ -75,7 +75,6 @@ You can get further help in [the SIMATIC IOT2050 forum](https://support.industry
 After working through the Setting Up, an update must be performed for the system and *git* must be installed. The following commands are executed for this:
 
     sudo apt-get update
-    sudo apt-get upgrade
     sudo apt-get install git
 
 ### **Enable the SPI-Interface on the IOT2050**
